@@ -6,17 +6,13 @@ body {
 }
 #coder {
     width: 25%;
-    height: 83vh;
+    height: 80vh;
 }
 #output {
     width: 75%;
-    height: 83vh;
+    height: 80vh;
 }
 
-textarea{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
 .container {
     display: flex;

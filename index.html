@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Code Editor : reboot13</title>
+    <title>Online Code Editor</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -15,27 +15,42 @@
     <button onclick="resize(this.id)" id="mobile">Mobile</button>
     <div class="container">
       
-      <iframe src="coder.html" frameborder="1" id="coder"></iframe>
+      <iframe src="coder.html" frameborder="0" id="coder"></iframe>
       
-      <iframe src="output.html" frameborder="1" id="output"></iframe>
-
+      <iframe src="output.html" frameborder="1" id="output"></iframe> 
+      
     </div>
-
-    <script>
-      function resize(clicked_id){
-        id = clicked_id;
-
-        if(id == "desktop"){
-          document.getElementById('output').style.width = "75%"
-        }
-        else if(id == "tablet"){
-          document.getElementById('output').style.width  = "50%"
-        }
-        else if(id == "mobile"){
-          document.getElementById('output').style.width = "25%"
-        }
-      }
-    </script>
 </div>
+
+<div class="slidecontainer" style="flex-direction:row;">
+  <input type="range" min="25" max="75" value="25" id="width" >
+</div>
+
+
+
+<script>
+let slider = document.getElementById('width')
+slider.oninput = function() {
+  console.log(slider.value)
+  document.getElementById('output').style.width = 100 - slider.value + "%"
+  document.getElementById('coder').style.width = slider.value + "%"
+}
+  function resize(clicked_id){
+    id = clicked_id;
+
+    if(id == "desktop"){
+      document.getElementById('output').style.width = "75%"
+      document.getElementById('coder').style.width = "25%"
+    }
+    else if(id == "tablet"){
+      document.getElementById('output').style.width  = "50%"
+      document.getElementById('coder').style.width = "50%"
+    }
+    else if(id == "mobile"){
+      document.getElementById('output').style.width = "25%"
+      document.getElementById('coder').style.width = "50%"
+    }
+  }
+</script>
 </body>
 </html>
