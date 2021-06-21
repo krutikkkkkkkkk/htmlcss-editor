@@ -9,12 +9,34 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  
     <h4>Live HTML Editor [reboot13]</h4>
+    <button onclick="resize(this.id)" id="desktop">Desktop</button>
+    <button onclick="resize(this.id)" id="tablet">Tablet</button>
+    <button onclick="resize(this.id)" id="mobile">Mobile</button>
     <div class="container">
-      <iframe src="coder.html" frameborder="1" id="coder"></iframe> <br>
-      <iframe src="output.html" frameborder="1" id="output"></iframe>  
+      
+      <iframe src="coder.html" frameborder="1" id="coder"></iframe>
+      
+      <iframe src="output.html" frameborder="1" id="output"></iframe>
+
     </div>
 
+    <script>
+      function resize(clicked_id){
+        id = clicked_id;
+
+        if(id == "desktop"){
+          document.getElementById('output').style.width = "70%"
+        }
+        else if(id == "tablet"){
+          document.getElementById('output').style.width  = "50%"
+        }
+        else if(id == "mobile"){
+          document.getElementById('output').style.width = "25%"
+        }
+      }
+    </script>
 </div>
 </body>
 </html>

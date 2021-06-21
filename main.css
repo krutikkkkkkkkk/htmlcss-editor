@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 2rem,1rem;
+    justify-content: space-between;
 }
 h4 {
     flex-direction: column;
