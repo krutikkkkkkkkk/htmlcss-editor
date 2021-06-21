@@ -1,6 +1,23 @@
 body {
     background-color: #222;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-top: 0;
 }
+#coder {
+    width: 25%;
+    height: 83vh;
+}
+#output {
+    width: 75%;
+    height: 83vh;
+}
+
+textarea{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .container {
     display: flex;
     flex-direction: row;
