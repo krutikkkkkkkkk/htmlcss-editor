@@ -3,6 +3,7 @@ body {
 }
 .container {
     display: flex;
+    flex-direction: row;
     padding: 2rem,1rem;
 }
 h4 {
@@ -10,4 +11,19 @@ h4 {
     color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left:.1rem ;
+}
+
+
+@media only screen 
+   and (max-width : 768px) {
+   .container {
+       flex-direction: column;
+   }
+   #coder {
+    width: 100%;
+}
+#output {
+    width: 100%;
+
+}
 }
