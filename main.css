@@ -1,0 +1,13 @@
+body {
+    background-color: #222;
+}
+.container {
+    display: flex;
+    padding: 2rem,1rem;
+}
+h4 {
+    flex-direction: column;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:.1rem ;
+}
