@@ -46,7 +46,7 @@ function displayData(){
 
 var play = setInterval(function(){
     displayData()
-},1000) 
+},500) 
 
 
 

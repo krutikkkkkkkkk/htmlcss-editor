@@ -37,7 +37,7 @@ button{
     border: none;
     margin-left: .5rem;
     padding: .2rem .6rem;
-    background-color: rgb(0, 204, 17);
+    background-color: #00cc11;
     color: white;
     font-family: monospace;
 }
