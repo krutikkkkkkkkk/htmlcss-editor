@@ -9,5 +9,8 @@ function displayData(){
   
 }
 
-displayData()
-setInterval(displayData,1000)
+var play = setInterval(function(){
+    displayData()
+},1000) 
+
+

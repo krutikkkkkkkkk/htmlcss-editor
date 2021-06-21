@@ -22,3 +22,33 @@ slider.oninput = function() {
       document.getElementById('coder').style.width = "75%"
     }
   }
+
+
+let Stop = document.getElementsByTagName('button')[1]
+ Stop.addEventListener('click',()=>{
+  var status = document.getElementById('status');
+        output.clearInterval(play)
+        status.innerHTML = "Paused"
+        status.style.background = "red"    
+})
+
+document.getElementsByTagName('button')[0].addEventListener('click',()=> {
+    var ifr = document.getElementsByTagName('iframe')[1];
+    ifr.src = ifr.src;
+    var status = document.getElementById('status');
+    status.innerHTML = "Running"
+    status.style.background = "#00cc11"  
+})
+
+function displayData(){
+    return 0;
+}
+
+var play = setInterval(function(){
+    displayData()
+},1000) 
+
+
+
+
+
