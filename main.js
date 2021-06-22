@@ -3,7 +3,7 @@ slider.oninput = function() {
   document.getElementById('output').style.width = 100 - slider.value + "%"
   document.getElementById('coder').style.width = slider.value + "%"
 }
-  function resize(clicked_id){
+function resize(clicked_id){
     id = clicked_id;
 
     if(id == "desktop"){

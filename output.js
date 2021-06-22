@@ -5,10 +5,9 @@ function displayData(){
     ///CSS
     sheet.innerHTML = localStorage.getItem('css')
     document.body.appendChild(sheet);
-
-  
 }
 
+///display data every .5 second
 var play = setInterval(function(){
     displayData()
 },500) 

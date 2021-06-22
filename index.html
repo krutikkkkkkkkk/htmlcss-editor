@@ -7,25 +7,19 @@
     <title>Online Code Editor</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
-    <script src="module.js" defer></script>
 </head>
 <body>
-  
     <h4>Live HTML Editor  <a href="https://youtube.com/krutikraut" target="_blank">[reboot13]</a></h4>
     <button id="running">Start</button>
     <button id="running">Stop</button>  <span id="status" class="play">Running</span>
     <div class="container">
-      
       <iframe src="coder.html" frameborder="0" id="coder"></iframe>
-      
       <iframe src="output.html" frameborder="0" id="output" name="output"></iframe> 
-      
     </div>
     <button onclick="resize(this.id)" id="desktop" style="margin-left:.5rem;">Desktop</button>
     <button onclick="resize(this.id)" id="tablet">Tablet</button>
     <button onclick="resize(this.id)" id="mobile">Mobile</button>
     </div>
-
 <div class="slidecontainer" style="flex-direction:row; padding-top: 1rem;">
   <span style="color: white; font-family: monospace; position: relative; top:-3px; padding-left: .5rem;">RESIZE</span> <input type="range" min="25" max="75" value="25" id="width" > 
 </div>

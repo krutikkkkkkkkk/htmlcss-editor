@@ -7,7 +7,8 @@
     <title>Document</title>
     <style>
         body{
-            overflow-y: hidden;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
         }
         .editor{
             display: flex;
@@ -18,28 +19,21 @@
            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         textarea{
- 
-    margin-bottom: 1rem;
-    background: rgb(80, 80, 80);
-    color: white;
-}
-
+            margin-bottom: 1rem;
+            background: rgb(80, 80, 80);
+            color: white;
+            width: 90%;
+            border-radius: .3rem;
+        }
     </style>
 </head>
 <body>
     <div class="editor">
      <label for="html">HTML</label>
-     <textarea name="html" id="tags"  rows="13" spellcheck="false">
-
-    </textarea>
-
+     <textarea name="html" id="tags"  rows="13" spellcheck="false"></textarea>
      <label for="CSS">CSS</label>
-     <textarea name="" id="css"  rows="13" spellcheck="false">
-
-     </textarea>
+     <textarea name="" id="css"  rows="13" spellcheck="false"> </textarea>
     </div>
-    <script src="coder.js" defer></script>
-  
-    
+    <script src="coder.js" defer></script> 
 </body>
 </html>
